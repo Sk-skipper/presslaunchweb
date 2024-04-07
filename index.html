@@ -28,12 +28,34 @@
     width: 300px;
     background-color: #f5f5f5;
     opacity: 0.8; /* Adjust the opacity if necessary */
+    position: relative; /* Set position to relative */
   }
 
   #countdown {
     font-size: 36px;
-    margin: 10px auto; /* Center the countdown */
+    margin: 20px auto; /* Add gap between countdown and other elements */
     text-align: center; /* Center the countdown text */
+    padding: 20px;
+  }
+
+  #instagram-link {
+    position: absolute; /* Position the Instagram link absolutely */
+    bottom: 10px; /* Adjust bottom position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center elements */
+  }
+
+  #instagram-link img {
+    width: 30px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Show cursor as pointer */
+    margin-right: 10px; /* Add gap between image and text */
+  }
+
+  #livestream-text {
+    font-family: 'Times New Roman', serif;
   }
 </style>
 </head>
@@ -43,6 +65,12 @@
   <p style="font-family: 'Times New Roman', serif;">Press Launch for Xbox Game Pass</p> <!-- Text advertising the press launch -->
   <p style="font-family: 'Times New Roman', serif;">Venue: Workforce Building</p> <!-- Text indicating the venue -->
   <div id="countdown"></div>
+
+  <!-- Instagram Link -->
+  <div id="instagram-link">
+    <img src="background/instagram.jpeg" alt="Instagram">
+    <p id="livestream-text">Live stream coming soon!</p>
+  </div>
 </div>
 
 <script>
